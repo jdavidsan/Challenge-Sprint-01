@@ -1,0 +1,347 @@
+*{
+    background: #F3F5FC;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+    font-weight: 400;
+    line-height: 150%;
+    font-size: 32px;   
+}
+main{
+    width: 100%;
+    height: 595px;
+    display: flex;
+}
+
+.bloque1{
+    width: 65%;
+    height: 595px;
+}
+.logo{
+    width: 92%;
+    display: flex;
+    margin: 3% 0% 0% 8%;
+ }
+ .encriptar{
+    display: flex;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+ }
+ .cajatexto1{
+    display: flex;
+    width: 80%;
+    height: 360px;
+    margin: 2% 0% 0% 20%;
+    color: #0A3871;
+    border: none;
+ }
+ ::placeholder{color: #0A3871;}
+    .cajatexto1:focus{
+        outline: none;
+    }
+.info{
+    width: 100%;
+    display: flex;
+}
+ h5{
+    padding-top: 1%;
+    margin: 1% 0% 0% 20%;
+    font-size: 13px;
+ }
+ .botones{
+    width: 100%;
+    display: flex;
+ }
+
+.botones button{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+    border: 1px solid #0A3871;
+    cursor: pointer;
+}
+
+.boton1{
+    margin-left: 20%;
+    background-color: #0A3871;
+    color: white;
+}
+.boton1:hover{
+    transform: rotate(45deg), scaleX(130%);
+	background: #0753b1;
+    border: none;
+	transition: all ease 0.5s;
+}
+.boton2{
+    margin-left: 5%;
+    background: #D8DFE8;
+    color: #0A3871;
+}
+.boton2:hover{
+    transform: rotate(45deg), scaleX(130%);
+	background: #ffffff;
+    border: 1px solid #0A3871;
+	transition: all ease 0.5s;
+}
+
+/* Área para mostrar el texto encriptado/desencriptado.*/
+.bloque2 {
+    display: flex;
+    width: 35%;
+    height: 625px;
+    text-align: center;
+}
+.desencriptar{
+    width: 75%;
+    margin: 3% 0% 3% 15%;
+    border-radius: 36px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px 0px #d6d6d6;
+}
+.cajatexto2{
+    width: 90%;
+    height: 190px;
+    padding: 3%;
+    border-radius: 32px;
+    color: #0A3871;
+    background: #ffffff;
+    border: none;
+    font-size: 24px;
+}
+    .cajatexto2:focus{
+        outline: none;
+    }
+.desencriptar img{
+    width: 80%;
+    vertical-align: top;
+    display: inline-block;
+    background-color: #007cb600;
+}
+.bloque2 h4{
+    background-color: #ffffff00;
+    font-size: 20px;
+    padding: 0% 10% 0% 10%;
+    font-weight: bold;
+    line-height: 28.8px;
+}
+.bloque2 p{
+    font-size: 14px;
+    padding: 0% 2% 0% 2%;
+    color: #495057;
+    background-color: #ffffff00;
+    line-height: 20px;
+}
+.buttoncopi{
+    width: 100%;
+    background-color: #ffffff00;
+}
+.boton3{
+    width: 90%;
+    height: 67px;
+    border-radius: 24px;
+    font-size: 16px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    background: #ffffff;
+    display: inline-block;
+    display: none;
+    margin: 80% 5% 0% 5%;
+}
+.boton3:hover{
+    transform: rotate(45deg), scaleX(130%);
+	background: #0A3871;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+	transition: all ease 0.5s;
+    cursor: pointer;
+}
+/* footer datos de la persona que desarrolló el sitio web!*/
+.footer{
+    margin-left: 30%;
+    width: 65%;
+    height: 5px;
+    padding-top: 12px;
+    font-family: 'Inter';
+    font-size: 12px;
+}
+.footer h6{
+    color: #495057;
+}
+.footer a{
+    color: #007BB6;
+    font-weight: bold;
+    text-decoration: none;
+}
+/*Web Respinsive design*/
+@media screen and (max-width:768px){
+    main{
+        width: 100%;
+        height: 974px;
+    }
+    .bloque1{
+        float: left;
+        width: 100%;
+        height: 660px;
+    }
+    .logo{
+        width: 95%;
+        margin: 10% 0% 0% 5%;
+        }
+    .encriptar{
+        width: 100%;
+        height: 510px;
+    }
+    .cajatexto1{
+        width: 90%;
+        height: 400px;
+        margin: 10% 5% 0% 5%;
+    }
+    .info{
+        width: 100%;
+    }
+    h5 {
+        padding-top: 1%;
+        font-size: 15px;
+        margin: 0% 5% 0% 5%;
+    }
+    .botones{
+        width: 100%;
+    }
+    .botones button{
+        width: 332px;
+        height: 67px;
+        margin-left: 5%;
+    }
+    .bloque2{
+        left: auto;
+        position: absolute;
+        align-content: center;
+        width: 100%;
+        height: 205px;
+        margin-top: 773px;
+    }
+    .desencriptar{
+        width: 90%;
+        height: 170px;
+        position: absolute;
+        margin: 4% 5% 0% 5%;
+    }
+    .cajatexto2{
+        width: 94%;
+        height: 80px;
+        padding: 0% 3% 0% 3%;
+    }
+    .desencriptar img{
+        display: none;
+    }
+    .desencriptar h4{
+        padding: 0% 10% 0% 10%;
+        font-size: 24px;
+    }
+    .desencriptar p{
+        padding: 0% 10% 0% 10%;
+        font-size: 16px;
+    }
+    .boton3{
+        width: 90%;
+        height: 67px;
+        margin-top: 0px;
+    }
+    .footer{
+        width: 100%;
+        height: 30px;
+        padding-top: 20px;
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width:375px){
+    main{
+        width: 100%;
+        height: 883px;
+    }
+    .bloque1{
+        float: left;
+        width: 100%;
+        height: 460px;
+    }
+    .logo{
+        width: 95%;
+        margin: 10% 0% 0% 5%;
+        }
+    .encriptar{
+        width: 100%;
+        height: 330px;
+    }
+    .cajatexto1{
+        width: 90%;
+        height: 300px;
+        margin: 10% 5% 0% 5%;
+    }
+    .info{
+        width: 100%;
+    }
+    h5 {
+        padding-top: 1%;
+        font-size: 12px;
+        margin: 0% 5% 0% 5%;
+    }
+    .botones{
+        width: 100%;
+        display: inline-block;
+    }
+    .botones button{
+        width: 90%;
+        height: 67px;
+    }
+    .boton2{
+        margin-top: 5%;
+    }
+    .bloque2{
+        left: auto;
+        position: absolute;
+        align-content: center;
+        width: 100%;
+        height: 205px;
+        margin-top: 660px;
+    }
+    .desencriptar{
+        width: 90%;
+        height: 200px;
+        position: absolute;
+        margin: 4% 5% 0% 5%;
+    }
+    .cajatexto2{
+        width: 94%;
+        height: 80px;
+        padding: 0% 3% 0% 3%;
+    }
+    .desencriptar img{
+        display: none;
+    }
+    .desencriptar h4{
+        padding: 0% 10% 0% 10%;
+        font-size: 24px;
+    }
+    .desencriptar p{
+        padding: 0% 10% 0% 10%;
+        font-size: 16px;
+    }
+    .boton3{
+        width: 90%;
+        height: 67px;
+        margin-top: 6%;
+    }
+    .footer{
+        width: 100%;
+        height: 30px;
+        padding-top: 20px;
+        font-size: 12px;
+        margin: 0%;
+        text-align: center;
+    }
+
+}

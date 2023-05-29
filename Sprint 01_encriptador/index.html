@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <main>
+        <section class="bloque1">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/Logo.svg" alt="Logo Alura">
+                </a>
+            </div>
+            <div class="encriptar">
+                <textarea class="cajatexto1" placeholder="Ingrese el texto aqui" id="ctexto1" cols="30" rows="20"></textarea>
+                <!--<input class="cajatexto1" type="text" placeholder="Ingrese el texto aqui" id="ctexto1">-->
+            </div>
+            <div class="info">
+                <h5><img src="img/bi_exclamation-circle-fill.svg" alt="">
+                    Solo letras minúsculas y sin acentos
+                </h5>
+            </div>
+            <div class="botones">
+                <button class="boton1" type="button" id="bencriptar" onclick="encriptar()">Encriptar</button>
+                <button class="boton2" type="button" id="bdesencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="bloque2">
+            <div class="desencriptar">
+                <textarea class="cajatexto2" id="ctexto2" cols="30" rows="10"></textarea>
+                <img src="img/Muñeco.svg" alt="Muñeco Alura" id="imgmuñeco">
+                <h4 id="textoh4">Ningún mensaje fue encontrado</h4>
+                <p id="textop">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <div class="buttoncopi">
+                    <button class="boton3" type="button" id="copy" onclick="copiar()">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <h6>Web desarrollada por / <a href="https://www.linkedin.com/in/jorge-david-s%C3%A1nchez-webdesign/" target="_blank">J. David Sanchez </a></h6>
+        </div>
+    </footer>
+    <script>
+        var button1 = document.querySelector("#bencriptar");
+        button1.onclick = encriptar;
+        var button2 = document.querySelector("#bdesencriptar");
+        button2.onclick = desencriptar;
+        var button3 = document.querySelector("#copy");
+        button3.onclick = copiar;
+    </script>    
+</body>
+</html>
